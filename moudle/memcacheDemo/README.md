@@ -1,0 +1,1 @@
+libmemcached编译失败，缺少头文件event.h是因为没有安装libevent
