@@ -7,7 +7,7 @@ BIN_DIR := ../bin
 
 redisDemo : redisDemo.o
 	${CXX} $^ -o ${BIN_DIR}/$@ ${LDFLAGS}
-
+	@rm -f $^
 %.o : %.cpp
 	$(CXX) $< -c -o $@ ${CPPFLAGS}
 
